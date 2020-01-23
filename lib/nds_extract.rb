@@ -11,7 +11,7 @@ def directors_totals(nds)
   nds.each do |elem|
     puts elem[:name]
     puts "blank"
-    puts elem[:movies].reduce do |sum, element|
+    elem[:movies].reduce do |sum, element|
       binding.pry
       sum + element[:worldwide_gross]
     end
