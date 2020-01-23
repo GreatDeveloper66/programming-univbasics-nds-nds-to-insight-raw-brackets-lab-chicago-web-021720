@@ -8,11 +8,10 @@ def directors_totals(nds)
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
   nds.each do |elem|
+    puts elem
     puts elem[:name]
     puts "blank"
-    puts elem[:movies].reduce do |sum, elem|
-      sum + elem[:worldwide_gross]
-    end
+    puts elem[:movies]
   end
   result = {
   }
