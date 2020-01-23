@@ -7,10 +7,7 @@ def directors_totals(nds)
   #
   #
   # The Hash result be full of things like "Jean-Pierre Jeunet" => "222312123123"
-  nds[:name].each do |elem|
-      pp elem[:movies]
-      puts "blank"
-    end
+  pp nds
   result = {
   }
   #
