@@ -1,5 +1,6 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require 'directors_database'
+require 'pry'
 
 def directors_totals(nds)
   # Remember, it's always OK to pretty print what you get *in* to make sure
@@ -11,6 +12,7 @@ def directors_totals(nds)
     puts elem[:name]
     puts "blank"
     puts elem[:movies].reduce do |sum, element|
+      binding.pry
       sum + element[:worldwide_gross]
     end
   end
