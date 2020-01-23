@@ -10,7 +10,7 @@ def directors_totals(nds)
   nds.each do |elem|
     puts elem[:name]
     puts "blank"
-    puts elem[:movies].reduce(0) do |sum, elem|
+    puts elem[:movies].reduce do |sum, elem|
       sum + elem[:worldwide_gross]
     end
   end
